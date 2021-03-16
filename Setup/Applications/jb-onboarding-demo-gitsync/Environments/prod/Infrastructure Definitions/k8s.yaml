@@ -5,5 +5,5 @@ deploymentType: KUBERNETES
 infrastructure:
 - type: DIRECT_KUBERNETES
   cloudProviderName: jbiron-hu-cluster
-  namespace: default
+  namespace: ${service.name}-${env.name}
   releaseName: release-${infra.kubernetes.infraId}
