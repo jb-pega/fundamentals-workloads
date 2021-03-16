@@ -1,11 +1,11 @@
-name: harness-example
+name: $app.{service.name}
 replicas: 1
 
 image: ${artifact.metadata.image}
 dockercfg: ${artifact.source.dockerconfig}
 
 createNamespace: true
-namespace: ${infra.kubernetes.namespace}
+namespace: $app.{service.name}
 
 # Service Type allow you to specify what kind of service you want.
 # Possible values for ServiceType are:
