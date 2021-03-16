@@ -1,11 +1,11 @@
-name: $app.{service.name}
+name: jb-onboarding-gitsync
 replicas: 1
 
 image: ${artifact.metadata.image}
 dockercfg: ${artifact.source.dockerconfig}
 
 createNamespace: true
-namespace: $app.{service.name}
+namespace: ${infra.kubernetes.namespace}
 
 # Service Type allow you to specify what kind of service you want.
 # Possible values for ServiceType are:
