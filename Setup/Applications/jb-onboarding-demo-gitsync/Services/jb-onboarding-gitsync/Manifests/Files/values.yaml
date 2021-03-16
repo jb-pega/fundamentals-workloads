@@ -24,6 +24,6 @@ serviceTargetPort: 80
 env:
   config:
     key1: value1
-    kafka-stream: test
+    kafka-stream: $app.{serviceVariable.kafka_stream}
   secrets:
     key2: value2
