@@ -7,7 +7,7 @@ pipelineStages:
   skipCondition:
     type: DO_NOT_SKIP
   stageName: STAGE 1
-  workflowName: jb-onboarding-gitsync-service
+  workflowName: rolling
   workflowVariables:
   - entityType: ENVIRONMENT
     name: Environment
@@ -24,7 +24,7 @@ pipelineStages:
   skipCondition:
     type: DO_NOT_SKIP
   stageName: STAGE 2
-  workflowName: jb-onboarding-gitsync-service
+  workflowName: rolling
   workflowVariables:
   - entityType: ENVIRONMENT
     name: Environment
@@ -41,7 +41,7 @@ pipelineStages:
   skipCondition:
     type: DO_NOT_SKIP
   stageName: STAGE 3
-  workflowName: jb-onboarding-gitsync-service
+  workflowName: rolling
   workflowVariables:
   - entityType: ENVIRONMENT
     name: Environment
