@@ -36,7 +36,6 @@ phases:
     name: Wrap Up
     stepsInParallel: false
   provisionNodes: false
-  serviceName: jb-onboarding-gitsync
   statefulSet: false
   templateExpressions:
   - expression: ${Service}
@@ -74,7 +73,6 @@ rollbackPhases:
     phaseStepNameForRollback: Wrap Up
     stepsInParallel: false
   provisionNodes: false
-  serviceName: jb-onboarding-gitsync
   statefulSet: false
   templateExpressions:
   - expression: ${Service}
